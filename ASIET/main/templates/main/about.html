@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - ASIET</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="{% static 'images/logo.png' %}" id="logo" alt="ASIET Logo" />
+    </div>
+    <div class="header-icons">
+  <img src="{% static 'images/1.png' %}" class="icon icon-small" alt="icon 1" />
+  <img src="{% static 'images/2.png' %}" class="icon icon-medium" alt="icon 2" />
+  <img src="{% static 'images/3.png' %}" class="icon icon-large" alt="icon 3" />
+  <img src="{% static 'images/5.png' %}" class="icon icon-small" alt="icon 5" />
+</div>
+   <nav class="nav-bar">
+  <ul class="nav-links">
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Us</a></li>
+    <li><a href="{% url 'registration' %}">Registration</a></li>
+  </ul>
+</nav>
+
+  </header>
+  <!-- END HEADER -->
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <h1 class="main-title">About Us</h1>
+    <div class="about-image">
+  <img src="{% static 'images/27afb8cf-14dd-47c5-98f1-f0da8688cce3-1587905015.jpg' %}" alt="ASIET Campus">
+</div>
+
+    <div class="about-content">
+      <h2 class="sub-title">Institute Profile</h2>
+      <h3 class="highlight">Adi Shankara Institute of Engineering & Technology</h3>
+      <p>
+       {{ about.content }}
+      </p>
+     
+    </div>
+  </section>
+
+</body>
+
+</html>

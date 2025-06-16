@@ -1,0 +1,230 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #004080;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+#logo {
+  height: 60px;
+}
+
+/* Header Icons */
+.header-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  border-radius: 10px;
+}
+
+.icon-small {
+  height: 30px;
+}
+
+.icon-medium {
+  height: 40px;
+}
+
+.icon-large {
+  height: 50px;
+}
+
+/* Navigation */
+.nav-bar {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #0066cc;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pic {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Page Styling */
+.about-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.main-title {
+  font-size: 36px;
+  text-align: center;
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.about-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.sub-title {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* Active link in navbar */
+.nav-links a.active {
+  background-color: #0066cc;
+  color: #fff;
+  border-radius: 6px;
+}
+
+
+.register-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  margin: 10px 0 5px;
+}
+
+.register-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.register-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2a75f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.register-form button:hover {
+  background-color: #1d5cd9;
+}
+.departments {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.departments h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #2a2a2a;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.department-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 18px;
+  font-weight: 500;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
